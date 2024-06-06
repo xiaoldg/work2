@@ -1,0 +1,74 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div
+		{
+			float: left;
+			margin: 10px
+		}
+		img
+		{
+			width: 300px;
+		}
+		#origin
+		{
+			width: 480px;
+		}
+		img#blur
+		/*同時列出兩種版本的屬性宣告*/
+		{
+			filter: blur(5px);
+			-webkit-filter:blur(5px)
+		}
+		#contrast
+		{
+			filter: contrast(300%);
+			-webkit-filter:contrast(300%)
+		}
+		#hue-rotate
+		{
+			filter: hue-rotate(-75deg);
+			-webkit-filter:hue-rotate(60deg);
+		}
+		#sepia
+		{
+			filter: sepia(90%);
+			-webkit-filter:sepia(90%);
+		}
+		#saturate
+		{
+			filter: saturate(3);
+			-webkit-filter:saturate(3);
+		}
+	</style>
+</head>
+<body>
+	
+		<img id="origin" src="/001.PNG">
+	<div>
+		<img id="blur" src="/001.PNG">
+		<br><span>模糊處理blur(5px)</span>
+	</div>
+	<div>
+		<img id="contrast" src="/001.PNG">
+		<br><span>調整對比contrast(300%)</span>
+	</div>
+	<div>
+		<img id="hue-rotate" src="/001.PNG">
+		<br><span>調整色相hue-rotate(90deg)</span>
+	</div>
+	<div>
+		<img id="sepia" src="/001.PNG">
+		<br><span>復古風sepia(90%)</span>
+	</div>
+	<div>
+		<img id="saturate" src="/001.PNG">
+		<br><span>調整飽和度saturate(3)</span>
+	</div>
+</body>
+</html>
+```
